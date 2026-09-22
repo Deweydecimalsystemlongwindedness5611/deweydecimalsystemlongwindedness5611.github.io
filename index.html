@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jack | Cybersecurity & Systems Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #05050a;
+            color: #00ff66;
+        }
+        .font-mono {
+            font-family: 'Fira Code', monospace;
+        }
+        .cyber-card {
+            background: rgba(10, 15, 25, 0.7);
+            border: 1px solid rgba(0, 255, 102, 0.2);
+            backdrop-filter: blur(12px);
+            transition: all 0.3s ease;
+        }
+        .cyber-card:hover {
+            border-color: #00ff66;
+            box-shadow: 0 0 20px rgba(0, 255, 102, 0.15);
+            transform: translateY(-3px);
+        }
+        .glow-text {
+            text-shadow: 0 0 10px rgba(0, 255, 102, 0.5);
+        }
+        .scanline {
+            background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0) 50%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.3));
+            background-size: 100% 4px;
+        }
+    </style>
+</head>
+<body class="min-h-screen relative overflow-x-hidden scanline">
+
+    <!-- Background Grid Effect -->
+    <div class="absolute inset-0 bg-[linear-gradient(to_right,#00ff660a_1px,transparent_1px),linear-gradient(to_bottom,#00ff660a_1px,transparent_1px)] bg-[size:4rem_4rem] pointer-events-none"></div>
+
+    <!-- Main Container -->
+    <div class="max-w-5xl mx-auto px-4 py-12 relative z-10">
+
+        <!-- Header / Terminal Banner -->
+        <header class="cyber-card rounded-xl p-6 mb-8 border-l-4 border-l-[#00ff66]">
+            <div class="flex items-center justify-between mb-4">
+                <div class="flex space-x-2">
+                    <span class="w-3 h-3 bg-red-500 rounded-inline inline-block"></span>
+                    <span class="w-3 h-3 bg-yellow-500 rounded-inline inline-block"></span>
+                    <span class="w-3 h-3 bg-green-500 rounded-inline inline-block"></span>
+                </div>
+                <span class="font-mono text-xs text-gray-400">jack@root-terminal:~#</span>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-extrabold font-mono text-white glow-text mb-2">
+                JACK <span class="text-[#00ff66]">&lt;/&gt;</span>
+            </h1>
+            <p class="text-gray-300 text-sm md:text-base font-mono">
+                Cybersecurity Enthusiast | Linux Systems Engineer | Python Developer
+            </p>
+        </header>
+
+        <!-- About Section -->
+        <section class="cyber-card rounded-xl p-6 mb-8">
+            <h2 class="text-xl font-mono font-bold text-white mb-3 flex items-center">
+                <span class="text-[#00ff66] mr-2">&gt;</span> root@jack:~$ whoami
+            </h2>
+            <p class="text-gray-300 leading-relaxed text-sm md:text-base">
+                Passionate cybersecurity researcher and advanced Linux system administrator. Specialized in penetration testing frameworks, custom desktop environments (CachyOS/Hyprland), and building smart automation tools using Python and Computer Vision. Dedicated to high-performance setups and secure network architectures.
+            </p>
+        </section>
+
+        <!-- Achievements & Projects Grid -->
+        <section class="mb-12">
+            <h2 class="text-xl font-mono font-bold text-white mb-6 flex items-center">
+                <span class="text-[#00ff66] mr-2">&gt;</span> core_achievements --list
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <!-- Card 1: CS50 Cybersecurity -->
+                <div class="cyber-card rounded-xl p-6 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="text-xs font-mono px-2.5 py-1 rounded bg-[#00ff66]/10 text-[#00ff66] border border-[#00ff66]/30">Security</span>
+                            <span class="text-xs font-mono text-gray-400">Sep 2026</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2 font-mono">CS50 Cybersecurity</h3>
+                        <p class="text-gray-300 text-sm">
+                            Completed Harvard's rigorous cybersecurity curriculum, mastering threat intelligence, risk management, and defensive security controls.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-gray-800 font-mono text-xs text-[#00ff66]">
+                        [Status: Verified & Completed]
+                    </div>
+                </div>
+
+                <!-- Card 2: Linux & Pentesting -->
+                <div class="cyber-card rounded-xl p-6 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="text-xs font-mono px-2.5 py-1 rounded bg-[#00ff66]/10 text-[#00ff66] border border-[#00ff66]/30">Systems</span>
+                            <span class="text-xs font-mono text-gray-400">Advanced</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2 font-mono">BlackArch & Kali Mastery</h3>
+                        <p class="text-gray-300 text-sm">
+                            Expertise in deploying penetration testing suites, configuring persistent environments via Rufus, and advanced system hardening.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-gray-800 font-mono text-xs text-[#00ff66]">
+                        [Status: Operational]
+                    </div>
+                </div>
+
+                <!-- Card 3: CachyOS & Hyprland -->
+                <div class="cyber-card rounded-xl p-6 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="text-xs font-mono px-2.5 py-1 rounded bg-[#00ff66]/10 text-[#00ff66] border border-[#00ff66]/30">Rice / Linux</span>
+                            <span class="text-xs font-mono text-gray-400">Custom</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2 font-mono">CachyOS / Hyprland Ricing</h3>
+                        <p class="text-gray-300 text-sm">
+                            Customized lightning-fast Arch Linux derivatives with window managers, Caelestia shell widgets, and optimized performance tuning.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-gray-800 font-mono text-xs text-[#00ff66]">
+                        [Environment: Active]
+                    </div>
+                </div>
+
+                <!-- Card 4: Python & Computer Vision -->
+                <div class="cyber-card rounded-xl p-6 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="text-xs font-mono px-2.5 py-1 rounded bg-[#00ff66]/10 text-[#00ff66] border border-[#00ff66]/30">Development</span>
+                            <span class="text-xs font-mono text-gray-400">Python</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2 font-mono">Computer Vision Apps</h3>
+                        <p class="text-gray-300 text-sm">
+                            Developed interactive scripts using OpenCV and MediaPipe for hand tracking, gesture controls, and automated processing pipelines.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-gray-800 font-mono text-xs text-[#00ff66]">
+                        [Language: Python 3.x]
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center font-mono text-xs text-gray-500 pt-6 border-t border-gray-900">
+            &copy; 2026 Jack. All rights reserved. Secured via GitHub Pages.
+        </footer>
+
+    </div>
+
+</body>
+</html>
